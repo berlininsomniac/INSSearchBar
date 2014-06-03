@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E471641193E66440062674B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E471640193E66440062674B /* Foundation.framework */; };
+		1E471643193E66440062674B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E471642193E66440062674B /* CoreGraphics.framework */; };
+		1E471645193E66440062674B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E471644193E66440062674B /* UIKit.framework */; };
+		1E47164B193E66440062674B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E471649193E66440062674B /* InfoPlist.strings */; };
+		1E47164D193E66440062674B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E47164C193E66440062674B /* main.m */; };
+		1E471651193E66440062674B /* INSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E471650193E66440062674B /* INSAppDelegate.m */; };
+		1E471654193E66440062674B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E471652193E66440062674B /* Main.storyboard */; };
+		1E471657193E66440062674B /* INSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E471656193E66440062674B /* INSViewController.m */; };
+		1E471659193E66440062674B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E471658193E66440062674B /* Images.xcassets */; };
+		1E471660193E66440062674B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E47165F193E66440062674B /* XCTest.framework */; };
+		1E471661193E66440062674B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E471640193E66440062674B /* Foundation.framework */; };
+		1E471662193E66440062674B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E471644193E66440062674B /* UIKit.framework */; };
+		1E47166A193E66440062674B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E471668193E66440062674B /* InfoPlist.strings */; };
+		1E47166C193E66440062674B /* SearchBarPlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E47166B193E66440062674B /* SearchBarPlaygroundTests.m */; };
+		1E471677193E66700062674B /* INSSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E471676193E66700062674B /* INSSearchBar.m */; };
+		1E471682193E68BD0062674B /* NavBarIconSearch_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E471678193E68BD0062674B /* NavBarIconSearch_blue@2x.png */; };
+		1E471683193E68BD0062674B /* NavBarIconSearchBar_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E471679193E68BD0062674B /* NavBarIconSearchBar_blue.png */; };
+		1E471684193E68BD0062674B /* NavBarIconSearchBar_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E47167A193E68BD0062674B /* NavBarIconSearchBar_blue@2x.png */; };
+		1E471685193E68BD0062674B /* NavBarIconSearchBar2_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E47167B193E68BD0062674B /* NavBarIconSearchBar2_blue.png */; };
+		1E471686193E68BD0062674B /* NavBarIconSearchBar2_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E47167C193E68BD0062674B /* NavBarIconSearchBar2_blue@2x.png */; };
+		1E471687193E68BD0062674B /* NavBarIconSearchCircle_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E47167D193E68BD0062674B /* NavBarIconSearchCircle_blue.png */; };
+		1E471688193E68BD0062674B /* NavBarIconSearchCircle_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E47167E193E68BD0062674B /* NavBarIconSearchCircle_blue@2x.png */; };
+		1E471689193E68BD0062674B /* NavBarIconSearch_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E47167F193E68BD0062674B /* NavBarIconSearch_blue.png */; };
+		1E47168A193E68BD0062674B /* NavBarIconSearch_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E471680193E68BD0062674B /* NavBarIconSearch_white@2x.png */; };
+		1E47168B193E68BD0062674B /* NavBarIconSearch_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E471681193E68BD0062674B /* NavBarIconSearch_white.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E471663193E66440062674B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E471635193E66440062674B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E47163C193E66440062674B;
+			remoteInfo = SearchBarPlayground;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E47163D193E66440062674B /* SearchBarPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchBarPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E471640193E66440062674B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1E471642193E66440062674B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1E471644193E66440062674B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1E471648193E66440062674B /* SearchBarPlayground-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SearchBarPlayground-Info.plist"; sourceTree = "<group>"; };
+		1E47164A193E66440062674B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1E47164C193E66440062674B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1E47164E193E66440062674B /* SearchBarPlayground-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SearchBarPlayground-Prefix.pch"; sourceTree = "<group>"; };
+		1E47164F193E66440062674B /* INSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = INSAppDelegate.h; sourceTree = "<group>"; };
+		1E471650193E66440062674B /* INSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = INSAppDelegate.m; sourceTree = "<group>"; };
+		1E471653193E66440062674B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1E471655193E66440062674B /* INSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = INSViewController.h; sourceTree = "<group>"; };
+		1E471656193E66440062674B /* INSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = INSViewController.m; sourceTree = "<group>"; };
+		1E471658193E66440062674B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1E47165E193E66440062674B /* SearchBarPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchBarPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E47165F193E66440062674B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1E471667193E66440062674B /* SearchBarPlaygroundTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SearchBarPlaygroundTests-Info.plist"; sourceTree = "<group>"; };
+		1E471669193E66440062674B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1E47166B193E66440062674B /* SearchBarPlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchBarPlaygroundTests.m; sourceTree = "<group>"; };
+		1E471675193E66700062674B /* INSSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INSSearchBar.h; sourceTree = "<group>"; };
+		1E471676193E66700062674B /* INSSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INSSearchBar.m; sourceTree = "<group>"; };
+		1E471678193E68BD0062674B /* NavBarIconSearch_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarIconSearch_blue@2x.png"; sourceTree = "<group>"; };
+		1E471679193E68BD0062674B /* NavBarIconSearchBar_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBarIconSearchBar_blue.png; sourceTree = "<group>"; };
+		1E47167A193E68BD0062674B /* NavBarIconSearchBar_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarIconSearchBar_blue@2x.png"; sourceTree = "<group>"; };
+		1E47167B193E68BD0062674B /* NavBarIconSearchBar2_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBarIconSearchBar2_blue.png; sourceTree = "<group>"; };
+		1E47167C193E68BD0062674B /* NavBarIconSearchBar2_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarIconSearchBar2_blue@2x.png"; sourceTree = "<group>"; };
+		1E47167D193E68BD0062674B /* NavBarIconSearchCircle_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBarIconSearchCircle_blue.png; sourceTree = "<group>"; };
+		1E47167E193E68BD0062674B /* NavBarIconSearchCircle_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarIconSearchCircle_blue@2x.png"; sourceTree = "<group>"; };
+		1E47167F193E68BD0062674B /* NavBarIconSearch_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBarIconSearch_blue.png; sourceTree = "<group>"; };
+		1E471680193E68BD0062674B /* NavBarIconSearch_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarIconSearch_white@2x.png"; sourceTree = "<group>"; };
+		1E471681193E68BD0062674B /* NavBarIconSearch_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBarIconSearch_white.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E47163A193E66440062674B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E471643193E66440062674B /* CoreGraphics.framework in Frameworks */,
+				1E471645193E66440062674B /* UIKit.framework in Frameworks */,
+				1E471641193E66440062674B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E47165B193E66440062674B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E471660193E66440062674B /* XCTest.framework in Frameworks */,
+				1E471662193E66440062674B /* UIKit.framework in Frameworks */,
+				1E471661193E66440062674B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E471634193E66440062674B = {
+			isa = PBXGroup;
+			children = (
+				1E471646193E66440062674B /* SearchBarPlayground */,
+				1E471665193E66440062674B /* SearchBarPlaygroundTests */,
+				1E47163F193E66440062674B /* Frameworks */,
+				1E47163E193E66440062674B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1E47163E193E66440062674B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E47163D193E66440062674B /* SearchBarPlayground.app */,
+				1E47165E193E66440062674B /* SearchBarPlaygroundTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E47163F193E66440062674B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E471640193E66440062674B /* Foundation.framework */,
+				1E471642193E66440062674B /* CoreGraphics.framework */,
+				1E471644193E66440062674B /* UIKit.framework */,
+				1E47165F193E66440062674B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1E471646193E66440062674B /* SearchBarPlayground */ = {
+			isa = PBXGroup;
+			children = (
+				1E47164F193E66440062674B /* INSAppDelegate.h */,
+				1E471650193E66440062674B /* INSAppDelegate.m */,
+				1E471652193E66440062674B /* Main.storyboard */,
+				1E471655193E66440062674B /* INSViewController.h */,
+				1E471656193E66440062674B /* INSViewController.m */,
+				1E471675193E66700062674B /* INSSearchBar.h */,
+				1E471676193E66700062674B /* INSSearchBar.m */,
+				1E471678193E68BD0062674B /* NavBarIconSearch_blue@2x.png */,
+				1E471679193E68BD0062674B /* NavBarIconSearchBar_blue.png */,
+				1E47167A193E68BD0062674B /* NavBarIconSearchBar_blue@2x.png */,
+				1E47167B193E68BD0062674B /* NavBarIconSearchBar2_blue.png */,
+				1E47167C193E68BD0062674B /* NavBarIconSearchBar2_blue@2x.png */,
+				1E47167D193E68BD0062674B /* NavBarIconSearchCircle_blue.png */,
+				1E47167E193E68BD0062674B /* NavBarIconSearchCircle_blue@2x.png */,
+				1E47167F193E68BD0062674B /* NavBarIconSearch_blue.png */,
+				1E471680193E68BD0062674B /* NavBarIconSearch_white@2x.png */,
+				1E471681193E68BD0062674B /* NavBarIconSearch_white.png */,
+				1E471658193E66440062674B /* Images.xcassets */,
+				1E471647193E66440062674B /* Supporting Files */,
+			);
+			path = SearchBarPlayground;
+			sourceTree = "<group>";
+		};
+		1E471647193E66440062674B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E471648193E66440062674B /* SearchBarPlayground-Info.plist */,
+				1E471649193E66440062674B /* InfoPlist.strings */,
+				1E47164C193E66440062674B /* main.m */,
+				1E47164E193E66440062674B /* SearchBarPlayground-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1E471665193E66440062674B /* SearchBarPlaygroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E47166B193E66440062674B /* SearchBarPlaygroundTests.m */,
+				1E471666193E66440062674B /* Supporting Files */,
+			);
+			path = SearchBarPlaygroundTests;
+			sourceTree = "<group>";
+		};
+		1E471666193E66440062674B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E471667193E66440062674B /* SearchBarPlaygroundTests-Info.plist */,
+				1E471668193E66440062674B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E47163C193E66440062674B /* SearchBarPlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E47166F193E66440062674B /* Build configuration list for PBXNativeTarget "SearchBarPlayground" */;
+			buildPhases = (
+				1E471639193E66440062674B /* Sources */,
+				1E47163A193E66440062674B /* Frameworks */,
+				1E47163B193E66440062674B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SearchBarPlayground;
+			productName = SearchBarPlayground;
+			productReference = 1E47163D193E66440062674B /* SearchBarPlayground.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E47165D193E66440062674B /* SearchBarPlaygroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E471672193E66440062674B /* Build configuration list for PBXNativeTarget "SearchBarPlaygroundTests" */;
+			buildPhases = (
+				1E47165A193E66440062674B /* Sources */,
+				1E47165B193E66440062674B /* Frameworks */,
+				1E47165C193E66440062674B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E471664193E66440062674B /* PBXTargetDependency */,
+			);
+			name = SearchBarPlaygroundTests;
+			productName = SearchBarPlaygroundTests;
+			productReference = 1E47165E193E66440062674B /* SearchBarPlaygroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E471635193E66440062674B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = INS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Berlin Insomniac";
+				TargetAttributes = {
+					1E47165D193E66440062674B = {
+						TestTargetID = 1E47163C193E66440062674B;
+					};
+				};
+			};
+			buildConfigurationList = 1E471638193E66440062674B /* Build configuration list for PBXProject "SearchBarPlayground" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E471634193E66440062674B;
+			productRefGroup = 1E47163E193E66440062674B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E47163C193E66440062674B /* SearchBarPlayground */,
+				1E47165D193E66440062674B /* SearchBarPlaygroundTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E47163B193E66440062674B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E471686193E68BD0062674B /* NavBarIconSearchBar2_blue@2x.png in Resources */,
+				1E47168B193E68BD0062674B /* NavBarIconSearch_white.png in Resources */,
+				1E471659193E66440062674B /* Images.xcassets in Resources */,
+				1E471683193E68BD0062674B /* NavBarIconSearchBar_blue.png in Resources */,
+				1E47168A193E68BD0062674B /* NavBarIconSearch_white@2x.png in Resources */,
+				1E471688193E68BD0062674B /* NavBarIconSearchCircle_blue@2x.png in Resources */,
+				1E471682193E68BD0062674B /* NavBarIconSearch_blue@2x.png in Resources */,
+				1E471689193E68BD0062674B /* NavBarIconSearch_blue.png in Resources */,
+				1E47164B193E66440062674B /* InfoPlist.strings in Resources */,
+				1E471687193E68BD0062674B /* NavBarIconSearchCircle_blue.png in Resources */,
+				1E471685193E68BD0062674B /* NavBarIconSearchBar2_blue.png in Resources */,
+				1E471654193E66440062674B /* Main.storyboard in Resources */,
+				1E471684193E68BD0062674B /* NavBarIconSearchBar_blue@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E47165C193E66440062674B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E47166A193E66440062674B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E471639193E66440062674B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E47164D193E66440062674B /* main.m in Sources */,
+				1E471677193E66700062674B /* INSSearchBar.m in Sources */,
+				1E471651193E66440062674B /* INSAppDelegate.m in Sources */,
+				1E471657193E66440062674B /* INSViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E47165A193E66440062674B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E47166C193E66440062674B /* SearchBarPlaygroundTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E471664193E66440062674B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E47163C193E66440062674B /* SearchBarPlayground */;
+			targetProxy = 1E471663193E66440062674B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1E471649193E66440062674B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E47164A193E66440062674B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1E471652193E66440062674B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E471653193E66440062674B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1E471668193E66440062674B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E471669193E66440062674B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E47166D193E66440062674B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1E47166E193E66440062674B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E471670193E66440062674B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SearchBarPlayground/SearchBarPlayground-Prefix.pch";
+				INFOPLIST_FILE = "SearchBarPlayground/SearchBarPlayground-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1E471671193E66440062674B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SearchBarPlayground/SearchBarPlayground-Prefix.pch";
+				INFOPLIST_FILE = "SearchBarPlayground/SearchBarPlayground-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1E471673193E66440062674B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SearchBarPlayground.app/SearchBarPlayground";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SearchBarPlayground/SearchBarPlayground-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SearchBarPlaygroundTests/SearchBarPlaygroundTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1E471674193E66440062674B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SearchBarPlayground.app/SearchBarPlayground";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SearchBarPlayground/SearchBarPlayground-Prefix.pch";
+				INFOPLIST_FILE = "SearchBarPlaygroundTests/SearchBarPlaygroundTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E471638193E66440062674B /* Build configuration list for PBXProject "SearchBarPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E47166D193E66440062674B /* Debug */,
+				1E47166E193E66440062674B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E47166F193E66440062674B /* Build configuration list for PBXNativeTarget "SearchBarPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E471670193E66440062674B /* Debug */,
+				1E471671193E66440062674B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1E471672193E66440062674B /* Build configuration list for PBXNativeTarget "SearchBarPlaygroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E471673193E66440062674B /* Debug */,
+				1E471674193E66440062674B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E471635193E66440062674B /* Project object */;
+}
