@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 /**
- *  The different states for an SNDSearchBarState.
+ *  The different states for an INSSearchBarState.
  */
 
 typedef NS_ENUM(NSUInteger, INSSearchBarState)
@@ -92,7 +92,7 @@ typedef NS_ENUM(NSUInteger, INSSearchBarState)
 @property (nonatomic, readonly) INSSearchBarState state;
 
 /**
- *  The (optional) delegate is responsible for providing values necessary for state change animations of the search bar. @see SNDSearchBarDelegate.
+ *  The (optional) delegate is responsible for providing values necessary for state change animations of the search bar. @see INSSearchBarDelegate.
  */
 
 @property (nonatomic, weak) id<INSSearchBarDelegate>	delegate;

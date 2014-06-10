@@ -70,9 +70,9 @@
 
 @end
 
-static CGFloat const kSNDSearchBarInset = 11.0;
-static CGFloat const kSNDSearchBarImageSize = 22.0;
-static NSTimeInterval const kSNDSearchBarAnimationStepDuration = 0.25;
+static CGFloat const kINSSearchBarInset = 11.0;
+static CGFloat const kINSSearchBarImageSize = 22.0;
+static NSTimeInterval const kINSSearchBarAnimationStepDuration = 0.25;
 
 @implementation INSSearchBar
 
@@ -98,7 +98,7 @@ static NSTimeInterval const kSNDSearchBarAnimationStepDuration = 0.25;
 		
 		[self addSubview:self.searchFrame];
 		
-		self.searchField = [[UITextField alloc] initWithFrame:CGRectMake(kSNDSearchBarInset, 3.0, CGRectGetWidth(self.bounds) - (2 * kSNDSearchBarInset) - kSNDSearchBarImageSize, CGRectGetHeight(self.bounds) - 6.0)];
+		self.searchField = [[UITextField alloc] initWithFrame:CGRectMake(kINSSearchBarInset, 3.0, CGRectGetWidth(self.bounds) - (2 * kINSSearchBarInset) - kINSSearchBarImageSize, CGRectGetHeight(self.bounds) - 6.0)];
 		self.searchField.borderStyle = UITextBorderStyleNone;
 		self.searchField.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 		self.searchField.font = [UIFont fontWithName:@"AvenirNext-Regular" size:16.0];
@@ -108,7 +108,7 @@ static NSTimeInterval const kSNDSearchBarAnimationStepDuration = 0.25;
 		
 		[self.searchFrame addSubview:self.searchField];
 		
-		UIView *searchImageViewOnContainerView = [[UIView alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.bounds) - kSNDSearchBarInset - kSNDSearchBarImageSize, (CGRectGetHeight(self.bounds) - kSNDSearchBarImageSize) / 2, kSNDSearchBarImageSize, kSNDSearchBarImageSize)];
+		UIView *searchImageViewOnContainerView = [[UIView alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.bounds) - kINSSearchBarInset - kINSSearchBarImageSize, (CGRectGetHeight(self.bounds) - kINSSearchBarImageSize) / 2, kINSSearchBarImageSize, kINSSearchBarImageSize)];
 		searchImageViewOnContainerView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
 		
 		[self.searchFrame addSubview:searchImageViewOnContainerView];
@@ -137,14 +137,14 @@ static NSTimeInterval const kSNDSearchBarAnimationStepDuration = 0.25;
 		
 		[searchImageViewOnContainerView addSubview:self.searchImageCrossRight];
 
-		self.searchImageViewOff = [[UIImageView alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.bounds) - kSNDSearchBarInset - kSNDSearchBarImageSize, (CGRectGetHeight(self.bounds) - kSNDSearchBarImageSize) / 2, kSNDSearchBarImageSize, kSNDSearchBarImageSize)];
+		self.searchImageViewOff = [[UIImageView alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.bounds) - kINSSearchBarInset - kINSSearchBarImageSize, (CGRectGetHeight(self.bounds) - kINSSearchBarImageSize) / 2, kINSSearchBarImageSize, kINSSearchBarImageSize)];
 		self.searchImageViewOff.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
 		self.searchImageViewOff.alpha = 1.0;
 		self.searchImageViewOff.image = [UIImage imageNamed:@"NavBarIconSearch_white"];
 		
 		[self.searchFrame addSubview:self.searchImageViewOff];
 
-		UIView *tapableView = [[UIView alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.bounds) - (2 * kSNDSearchBarInset) - kSNDSearchBarImageSize, 0.0, (2 * kSNDSearchBarInset) + kSNDSearchBarImageSize, CGRectGetHeight(self.bounds))];
+		UIView *tapableView = [[UIView alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.bounds) - (2 * kINSSearchBarInset) - kINSSearchBarImageSize, 0.0, (2 * kINSSearchBarInset) + kINSSearchBarImageSize, CGRectGetHeight(self.bounds))];
 		tapableView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleHeight;
 		[tapableView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(changeStateIfPossible:)]];
 		
@@ -208,7 +208,7 @@ static NSTimeInterval const kSNDSearchBarAnimationStepDuration = 0.25;
 		
 		self.searchField.text = nil;
 		
-		[UIView animateWithDuration:kSNDSearchBarAnimationStepDuration animations:^{
+		[UIView animateWithDuration:kINSSearchBarAnimationStepDuration animations:^{
 			
 			self.searchFrame.layer.borderColor = [UIColor whiteColor].CGColor;
 			
@@ -223,7 +223,7 @@ static NSTimeInterval const kSNDSearchBarAnimationStepDuration = 0.25;
 			
 			[self.searchField becomeFirstResponder];
 
-			[UIView animateWithDuration:kSNDSearchBarAnimationStepDuration * 2 animations:^{
+			[UIView animateWithDuration:kINSSearchBarAnimationStepDuration * 2 animations:^{
 				
 				self.searchFrame.layer.backgroundColor = [UIColor whiteColor].CGColor;
 				self.searchImageViewOff.alpha = 0.0;
@@ -258,7 +258,7 @@ static NSTimeInterval const kSNDSearchBarAnimationStepDuration = 0.25;
 		
 		self.state = INSSearchBarStateTransitioning;
 		
-		[UIView animateWithDuration:kSNDSearchBarAnimationStepDuration animations:^{
+		[UIView animateWithDuration:kINSSearchBarAnimationStepDuration animations:^{
 			
 			if ([self.delegate conformsToProtocol:@protocol(INSSearchBarDelegate)])
 			{
@@ -272,7 +272,7 @@ static NSTimeInterval const kSNDSearchBarAnimationStepDuration = 0.25;
 			
 		} completion:^(BOOL finished) {
 			
-			[UIView animateWithDuration:kSNDSearchBarAnimationStepDuration animations:^{
+			[UIView animateWithDuration:kINSSearchBarAnimationStepDuration animations:^{
 				
 				self.searchFrame.layer.borderColor = [UIColor clearColor].CGColor;
 				
@@ -342,14 +342,14 @@ static NSTimeInterval const kSNDSearchBarAnimationStepDuration = 0.25;
 			self.searchImageCircle.alpha = 1.0;
 			self.searchImageCrossLeft.alpha = 1.0;
 			
-			[UIView animateWithDuration:kSNDSearchBarAnimationStepDuration animations:^{
+			[UIView animateWithDuration:kINSSearchBarAnimationStepDuration animations:^{
 				
 				self.searchImageCircle.frame = CGRectMake(2.0, 2.0, 18.0, 18.0);
 				self.searchImageCrossLeft.frame = CGRectMake(7.0, 7.0, 8.0, 8.0);
 				
 			} completion:^(BOOL finished) {
 				
-				[UIView animateWithDuration:kSNDSearchBarAnimationStepDuration animations:^{
+				[UIView animateWithDuration:kINSSearchBarAnimationStepDuration animations:^{
 					
 					self.searchImageCrossRight.alpha = 1.0;
 					
@@ -367,13 +367,13 @@ static NSTimeInterval const kSNDSearchBarAnimationStepDuration = 0.25;
 		{
 			self.state = INSSearchBarStateTransitioning;
 			
-			[UIView animateWithDuration:kSNDSearchBarAnimationStepDuration animations:^{
+			[UIView animateWithDuration:kINSSearchBarAnimationStepDuration animations:^{
 				
 				self.searchImageCrossRight.alpha = 0.0;
 				
 			} completion:^(BOOL finished) {
 				
-				[UIView animateWithDuration:kSNDSearchBarAnimationStepDuration animations:^{
+				[UIView animateWithDuration:kINSSearchBarAnimationStepDuration animations:^{
 					
 					self.searchImageCircle.frame = CGRectMake(0.0, 0.0, 18.0, 18.0);
 					self.searchImageCrossLeft.frame = CGRectMake(14.0, 14.0, 8.0, 8.0);
