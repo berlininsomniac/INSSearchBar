@@ -67,4 +67,10 @@
 	// Do whatever you deem necessary.
 }
 
+- (void)searchBarDidTapReturn:(INSSearchBar *)searchBar
+{
+	// Do whatever you deem necessary.
+	// Access the text from the search bar like searchBar.searchField.text
+}
+
 @end
