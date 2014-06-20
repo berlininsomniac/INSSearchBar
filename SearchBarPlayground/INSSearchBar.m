@@ -16,10 +16,6 @@
 
 @property (nonatomic, strong) UIView *searchFrame;
 
-/**
- *  The text field used for entering search queries. Visible only when search is active.
- */
-
 @property (nonatomic, strong) UITextField *searchField;
 
 /**
@@ -390,6 +386,20 @@ static NSTimeInterval const kINSSearchBarAnimationStepDuration = 0.25;
 			}];
 		}
 	}
+}
+
+#pragma mark - text field delegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+	BOOL retVal = YES;
+	
+	if ([self.delegate conformsToProtocol:@protocol(INSSearchBarDelegate)])
+	{
+		[self.delegate searchBarDidTapReturn:self];
+	}
+	
+	return retVal;
 }
 
 #pragma mark - gesture recognizer delegate

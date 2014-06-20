@@ -77,6 +77,14 @@ typedef NS_ENUM(NSUInteger, INSSearchBarState)
 
 - (void)searchBar:(INSSearchBar *)searchBar didEndTransitioningFromState:(INSSearchBarState)previousState;
 
+/**
+ *  The delegate is informed that the search bar's return key was pressed. This should be used to start querries.
+ *
+ *  @param searchBar        The search bar whose return key was pressed.
+ */
+
+- (void)searchBarDidTapReturn:(INSSearchBar *)searchBar;
+
 @end
 
 /**
@@ -90,6 +98,12 @@ typedef NS_ENUM(NSUInteger, INSSearchBarState)
  */
 
 @property (nonatomic, readonly) INSSearchBarState state;
+
+/**
+ *  The text field used for entering search queries. Visible only when search is active.
+ */
+
+@property (nonatomic, readonly) UITextField *searchField;
 
 /**
  *  The (optional) delegate is responsible for providing values necessary for state change animations of the search bar. @see INSSearchBarDelegate.
