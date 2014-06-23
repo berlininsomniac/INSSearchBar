@@ -47,8 +47,6 @@ typedef NS_ENUM(NSUInteger, INSSearchBarState)
 
 @protocol INSSearchBarDelegate <NSObject>
 
-@required
-
 /**
  *  The delegate is asked to provide the destination frame for the search bar when the search bar is transitioning to the visible state.
  *
@@ -80,10 +78,22 @@ typedef NS_ENUM(NSUInteger, INSSearchBarState)
 /**
  *  The delegate is informed that the search bar's return key was pressed. This should be used to start querries.
  *
+ *  Important: If the searchField property is explicitly supplied with a delegate property this method will not be called.
+ *
  *  @param searchBar        The search bar whose return key was pressed.
  */
 
 - (void)searchBarDidTapReturn:(INSSearchBar *)searchBar;
+
+/**
+ *  The delegate is informed that the search bar's text has changed.
+ *
+ *  Important: If the searchField property is explicitly supplied with a delegate property this method will not be called.
+ *
+ *  @param searchBar        The search bar whose text did change.
+ */
+
+- (void)searchBarTextDidChange:(INSSearchBar *)searchBar;
 
 @end
 

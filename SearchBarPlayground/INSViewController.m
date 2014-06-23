@@ -73,4 +73,10 @@
 	// Access the text from the search bar like searchBar.searchField.text
 }
 
+- (void)searchBarTextDidChange:(INSSearchBar *)searchBar
+{
+	// Do whatever you deem necessary.
+	// Access the text from the search bar like searchBar.searchField.text
+}
+
 @end

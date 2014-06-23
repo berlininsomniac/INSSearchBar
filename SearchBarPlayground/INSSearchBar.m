@@ -195,7 +195,7 @@ static NSTimeInterval const kINSSearchBarAnimationStepDuration = 0.25;
 {
 	if (self.state == INSSearchBarStateNormal)
 	{
-		if ([self.delegate conformsToProtocol:@protocol(INSSearchBarDelegate)])
+		if ([self.delegate respondsToSelector:@selector(searchBar:willStartTransitioningToState:)])
 		{
 			[self.delegate searchBar:self willStartTransitioningToState:INSSearchBarStateSearchBarVisible];
 		}
@@ -208,7 +208,7 @@ static NSTimeInterval const kINSSearchBarAnimationStepDuration = 0.25;
 			
 			self.searchFrame.layer.borderColor = [UIColor whiteColor].CGColor;
 			
-			if ([self.delegate conformsToProtocol:@protocol(INSSearchBarDelegate)])
+			if ([self.delegate respondsToSelector:@selector(destinationFrameForSearchBar:)])
 			{
 				self.originalFrame = self.frame;
 				
@@ -230,7 +230,7 @@ static NSTimeInterval const kINSSearchBarAnimationStepDuration = 0.25;
 								
 				self.state = INSSearchBarStateSearchBarVisible;
 				
-				if ([self.delegate conformsToProtocol:@protocol(INSSearchBarDelegate)])
+				if ([self.delegate respondsToSelector:@selector(searchBar:didEndTransitioningFromState:)])
 				{
 					[self.delegate searchBar:self didEndTransitioningFromState:INSSearchBarStateNormal];
 				}
@@ -245,7 +245,7 @@ static NSTimeInterval const kINSSearchBarAnimationStepDuration = 0.25;
 	{
 		[self.window endEditing:YES];
 		
-		if ([self.delegate conformsToProtocol:@protocol(INSSearchBarDelegate)])
+		if ([self.delegate respondsToSelector:@selector(searchBar:willStartTransitioningToState:)])
 		{
 			[self.delegate searchBar:self willStartTransitioningToState:INSSearchBarStateNormal];
 		}
@@ -256,7 +256,7 @@ static NSTimeInterval const kINSSearchBarAnimationStepDuration = 0.25;
 		
 		[UIView animateWithDuration:kINSSearchBarAnimationStepDuration animations:^{
 			
-			if ([self.delegate conformsToProtocol:@protocol(INSSearchBarDelegate)])
+			if ([self.delegate respondsToSelector:@selector(destinationFrameForSearchBar:)])
 			{
 				self.frame = self.originalFrame;
 			}
@@ -282,7 +282,7 @@ static NSTimeInterval const kINSSearchBarAnimationStepDuration = 0.25;
 				
 				self.state = INSSearchBarStateNormal;
 				
-				if ([self.delegate conformsToProtocol:@protocol(INSSearchBarDelegate)])
+				if ([self.delegate respondsToSelector:@selector(searchBar:didEndTransitioningFromState:)])
 				{
 					[self.delegate searchBar:self didEndTransitioningFromState:INSSearchBarStateSearchBarVisible];
 				}
@@ -386,6 +386,11 @@ static NSTimeInterval const kINSSearchBarAnimationStepDuration = 0.25;
 			}];
 		}
 	}
+	
+	if ([self.delegate respondsToSelector:@selector(searchBarTextDidChange:)])
+	{
+		[self.delegate searchBarTextDidChange:self];
+	}
 }
 
 #pragma mark - text field delegate
@@ -394,7 +399,7 @@ static NSTimeInterval const kINSSearchBarAnimationStepDuration = 0.25;
 {
 	BOOL retVal = YES;
 	
-	if ([self.delegate conformsToProtocol:@protocol(INSSearchBarDelegate)])
+	if ([self.delegate respondsToSelector:@selector(searchBarDidTapReturn:)])
 	{
 		[self.delegate searchBarDidTapReturn:self];
 	}
